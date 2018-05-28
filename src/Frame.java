@@ -119,25 +119,21 @@ public class Frame extends JFrame{
             jb[i].addKeyListener(new KeyAdapter() {
                 @Override
                 public void keyPressed(KeyEvent e) {
-                    switch (e.getKeyCode()){
+                    switch (e.getKeyCode()) {
                         case KeyEvent.VK_UP:
-                            op=1;
+                            op = 1;
                             break;
                         case KeyEvent.VK_DOWN:
-                            op=2;
+                            op = 2;
                             break;
                         case KeyEvent.VK_LEFT:
-                            op=3;
+                            op = 3;
                             break;
                         case KeyEvent.VK_RIGHT:
-                            op=4;
+                            op = 4;
                             break;
-                        case KeyEvent.VK_F1:
-                            JLabel l = new JLabel("11");
-                            l.setSize(10,10);
-                            l.setLocation(50,50);
-                            jp2.add(l);
                     }
+
                 }
             });
         }
